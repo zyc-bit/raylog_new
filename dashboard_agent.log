@@ -1,0 +1,31 @@
+2022-06-20 22:45:07,223	INFO agent.py:83 -- Parent pid is 128931
+2022-06-20 22:45:07,223	INFO agent.py:109 -- Dashboard agent grpc address: 0.0.0.0:52124
+2022-06-20 22:45:07,226	INFO utils.py:99 -- Get all modules by type: DashboardAgentModule
+2022-06-20 22:45:23,943	WARNING tune_head.py:23 -- tune module is not available: ray.tune in ray > 0.7.5 requires 'tabulate'. Please re-run 'pip install ray[tune]' or 'pip install ray[rllib]'.
+2022-06-20 22:45:24,017	INFO utils.py:132 -- Available modules: [<class 'ray.dashboard.modules.event.event_agent.EventAgent'>, <class 'ray.dashboard.modules.log.log_agent.LogAgent'>, <class 'ray.dashboard.modules.log.log_agent.LogAgentV1Grpc'>, <class 'ray.dashboard.modules.reporter.reporter_agent.ReporterAgent'>, <class 'ray.dashboard.modules.runtime_env.runtime_env_agent.RuntimeEnvAgent'>]
+2022-06-20 22:45:24,017	INFO agent.py:130 -- Loading DashboardAgentModule: <class 'ray.dashboard.modules.event.event_agent.EventAgent'>
+2022-06-20 22:45:24,017	INFO event_agent.py:28 -- Event agent cache buffer size: 10240
+2022-06-20 22:45:24,018	INFO agent.py:130 -- Loading DashboardAgentModule: <class 'ray.dashboard.modules.log.log_agent.LogAgent'>
+2022-06-20 22:45:24,018	INFO agent.py:130 -- Loading DashboardAgentModule: <class 'ray.dashboard.modules.log.log_agent.LogAgentV1Grpc'>
+2022-06-20 22:45:24,018	INFO agent.py:130 -- Loading DashboardAgentModule: <class 'ray.dashboard.modules.reporter.reporter_agent.ReporterAgent'>
+2022-06-20 22:45:24,257	INFO agent.py:130 -- Loading DashboardAgentModule: <class 'ray.dashboard.modules.runtime_env.runtime_env_agent.RuntimeEnvAgent'>
+2022-06-20 22:45:24,257	INFO agent.py:134 -- Loaded 5 modules.
+2022-06-20 22:45:24,616	INFO http_server_agent.py:64 -- Dashboard agent http address: 0.0.0.0:45548
+2022-06-20 22:45:24,617	INFO http_server_agent.py:70 -- <ResourceRoute [GET] <StaticResource  /logs -> PosixPath('/tmp/ray/session_2022-06-20_22-44-31_837319_128819/logs')> -> <bound method StaticResource._handle of <StaticResource  /logs -> PosixPath('/tmp/ray/session_2022-06-20_22-44-31_837319_128819/logs')>>
+2022-06-20 22:45:24,617	INFO http_server_agent.py:70 -- <ResourceRoute [OPTIONS] <StaticResource  /logs -> PosixPath('/tmp/ray/session_2022-06-20_22-44-31_837319_128819/logs')> -> <bound method _PreflightHandler._preflight_handler of <aiohttp_cors.cors_config._CorsConfigImpl object at 0x7f234cd26e10>>
+2022-06-20 22:45:24,617	INFO http_server_agent.py:71 -- Registered 2 routes.
+2022-06-20 22:45:26,627	INFO event_agent.py:45 -- Report events to b'10.140.1.109:46305'
+2022-06-20 22:45:26,628	INFO event_utils.py:127 -- Monitor events logs modified after 1655734510.927032 on /tmp/ray/session_2022-06-20_22-44-31_837319_128819/logs/events, the source types are ['COMMON', 'RAYLET', 'CORE_WORKER'].
+2022-06-20 22:52:32,527	INFO runtime_env_agent.py:370 -- Creating runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}} with timeout 600 seconds.
+2022-06-20 22:52:32,528	INFO runtime_env_agent.py:413 -- Successfully created runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}, the context: {"command_prefix": [], "env_vars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0", "PYTHONPATH": ""}, "py_executable": "/mnt/lustre/zhangyuchang/.conda/envs/0524alpa/bin/python", "resources_dir": null, "container": {}}
+2022-06-20 22:52:32,543	INFO runtime_env_agent.py:447 -- Runtime env already created successfully. Env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}, context: {"command_prefix": [], "env_vars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0", "PYTHONPATH": ""}, "py_executable": "/mnt/lustre/zhangyuchang/.conda/envs/0524alpa/bin/python", "resources_dir": null, "container": {}}
+2022-06-20 22:52:32,544	INFO runtime_env_agent.py:447 -- Runtime env already created successfully. Env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}, context: {"command_prefix": [], "env_vars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0", "PYTHONPATH": ""}, "py_executable": "/mnt/lustre/zhangyuchang/.conda/envs/0524alpa/bin/python", "resources_dir": null, "container": {}}
+2022-06-20 22:52:32,544	INFO runtime_env_agent.py:447 -- Runtime env already created successfully. Env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}, context: {"command_prefix": [], "env_vars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0", "PYTHONPATH": ""}, "py_executable": "/mnt/lustre/zhangyuchang/.conda/envs/0524alpa/bin/python", "resources_dir": null, "container": {}}
+2022-06-20 22:52:32,544	INFO runtime_env_agent.py:447 -- Runtime env already created successfully. Env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}, context: {"command_prefix": [], "env_vars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0", "PYTHONPATH": ""}, "py_executable": "/mnt/lustre/zhangyuchang/.conda/envs/0524alpa/bin/python", "resources_dir": null, "container": {}}
+2022-06-20 22:56:13,674	INFO runtime_env_agent.py:514 -- Got request from raylet to decrease reference for runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,748	INFO runtime_env_agent.py:514 -- Got request from raylet to decrease reference for runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,748	INFO runtime_env_agent.py:514 -- Got request from raylet to decrease reference for runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,763	INFO runtime_env_agent.py:514 -- Got request from raylet to decrease reference for runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,763	INFO runtime_env_agent.py:514 -- Got request from raylet to decrease reference for runtime env: {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,763	INFO runtime_env_agent.py:137 -- Unused runtime env {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}}.
+2022-06-20 22:56:13,763	INFO runtime_env_agent.py:240 -- Runtime env {"envVars": {"XLA_FLAGS": "--xla_gpu_autotune_level=0"}} deleted.
